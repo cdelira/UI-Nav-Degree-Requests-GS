@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .image-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+.image-container .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #FFF;
+}
+.image-container:hover .after {
+    display: block;
+    background: rgba(152, 30, 50, .6);
+
+}
+
+.nav-text-image {
+  font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+  display: flex; 
+  text-align: center; 
+
+
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>Fade in Overlay</h2>
+
+ <a href="https://spokane.wsu.edu/about/campus-facts/buildings-and-art/">
+<div class="image-container">
+ <img src="https://s3.wp.wsu.edu/uploads/sites/656/2015/06/10-Campus_1-396x283.jpg" width= "250" height="250" />
+  <div class="after"><h1 class="nav-text-image"> WSU Spokane Campus: </h1><p class="nav-text-image">This is some content. This is some content. This is some content.</p></div>
+</div>
+</a>
+</body>
+</html>

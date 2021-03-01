@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible-nav-your-degree {
+  background-color: #f5f5f5;
+  color: #464e54;
+  cursor: pointer;
+  padding: 15px 32px;
+  width: 90%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+}
+
+.active, .collapsible-nav-your-degree:hover {
+  background-color: #981e32;
+  color: white;
+
+}
+
+.content-nav-your-degree {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  width:85%;
+}
+</style>
+</head>
+<body>
+
+<h2>Collapsible</h2>
+
+<h1 type="button" class="collapsible-nav-your-degree">Topic 1</h1>
+<div class="content-nav-your-degree">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<h1 type="button" class="collapsible-nav-your-degree">Topic 2</h1>
+<div class="content-nav-your-degree">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible-nav-your-degree");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
